@@ -10,8 +10,6 @@ function postStudent(body){
   
   
   function validate(body){
-
-
     let ok = false
     if(body && typeof body === 'object' && Object.keys(body).length> 0 ){
       if(Object.hasOwnProperty.bind(body)('name') && body.name !== '' && body.name.length > 3
